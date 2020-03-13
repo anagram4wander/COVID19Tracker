@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\COVID19Tracker\COVID19Tracker\ServerData\ServerInstanceReportPacket.cs" Link="ServerData\ServerInstanceReportPacket.cs" />
+    <Compile Include="..\COVID19Tracker\COVID19Tracker\ServerData\ServerLocationPacket.cs" Link="ServerData\ServerLocationPacket.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ServerData\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+
+</Project>

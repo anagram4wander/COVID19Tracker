@@ -8,5 +8,6 @@ namespace COVID19Tracker.Services
     {
         void StartLocationUpdates();
         event EventHandler<LocationUpdatedEventArgs> LocationUpdated;
+        bool Track { get; set; }
     }
 }

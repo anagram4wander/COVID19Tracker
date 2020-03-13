@@ -21,6 +21,29 @@ namespace COVID19Tracker.Droid.Services
     {
         private Intent BatteryOptimizationsIntent;
         public event EventHandler<LocationUpdatedEventArgs> LocationUpdated = delegate { };
+        private bool _Tracking = false;
+
+        public bool Track
+        {
+            get
+            {
+                return _Tracking;
+            }
+            set
+            {
+                if(_Tracking != value)
+                {
+                    _Tracking = value;
+                    if(_Tracking)
+                    {
+                        // TODO: Start service
+                    } else
+                    {
+                        // TODO: Stop service
+                    }
+                }
+            }
+        }
 
         CancellationTokenSource _cts;
         public override IBinder OnBind(Intent intent)
